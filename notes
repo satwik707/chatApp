@@ -1,0 +1,27 @@
+we need to refactor and create server because socketio needs server to be passed
+
+in html file socket.io/socket.io/js --this is a client side socket lib
+our client side js code will have access to this lib
+
+for location sharing we used geolocation api 
+
+npm bad-words --to disallow and validate bad words
+
+muostache is used for dynamic templates..yahan par we make a dynamic template..then store the msg in it then put it in the specified place
+
+emit--send and on means receive
+here index.js is server and chat.js is client
+
+moments.js is used to format the time 
+
+moment.js qs.js and moushtache was loaded as a script in the html file because we need to access it in the js file not the nodejs
+
+qs.js query string is used for parsing the url and giving us the right data i.e
+when you click on index.html and submit the form it will redirect you to chat.html and in the url it will show http://localhost:3000/chat.html?username=asd&room=asd
+now in this url we need the username and the room..to take it from url in the right format we use qs.js
+it will return an object with user:'',and room:''
+
+
+socket.emit,socket.on,io.emit,socket.broadcast.emit
+io.to.emit--sending to everyone inside that particular room
+socket.broadcast.to.emit --sending to everyone except the socket in that particular room
